@@ -16,7 +16,7 @@ async def handler(websocket, path):
         
         sleep(2)
         pyautogui.click()
-        await websocket.send("ok")
+        await websocket.send(data)
 
 start_server = websockets.serve(handler, "localhost", 8000)
 
